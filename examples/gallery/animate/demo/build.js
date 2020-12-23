@@ -39,25 +39,25 @@ scene.on('loaded', () => {
         });
       scene.addLayer(layer);
     });
-  fetch(
-    'https://gw.alipayobjects.com/os/basement_prod/40ef2173-df66-4154-a8c0-785e93a5f18e.json'
-  )
-    .then(res => res.json())
-    .then(data => {
-      const layer = new LineLayer({
-        zIndex: 0
-      })
-        .source(data)
-        .size(1)
-        .shape('line')
-        .color('#ff893a')
-        .animate({
-          interval: 1, // 间隔
-          duration: 2, // 持续时间，延时
-          trailLength: 2 // 流线长度
-        });
-      scene.addLayer(layer);
-    });
+//   fetch(
+//     'https://gw.alipayobjects.com/os/basement_prod/40ef2173-df66-4154-a8c0-785e93a5f18e.json'
+//   )
+//     .then(res => res.json())
+//     .then(data => {
+//       const layer = new LineLayer({
+//         zIndex: 0
+//       })
+//         .source(data)
+//         .size(1)
+//         .shape('line')
+//         .color('#ff893a')
+//         .animate({
+//           interval: 1, // 间隔
+//           duration: 2, // 持续时间，延时
+//           trailLength: 2 // 流线长度
+//         });
+//       scene.addLayer(layer);
+//     });
 
 });
 
